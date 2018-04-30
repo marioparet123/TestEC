@@ -1,0 +1,64 @@
+Angular JS (please answer at least 4)
+-	How do you share data between controllers?
+-	What is the difference between ng-show/ng-hide and ng-if directives?
+
+The ng-if  directive removes or creates a portion of the DOM, based on the expression. It removes the content from the page.
+The ng-show/ng-hide directives show or hide the given HTML element based on the expression provided. They hide the content using the CSS display property.
+
+
+-	What directive would you use to hide elements from the HTML DOM by removing them from the DOM and not by changing their styling?
+
+I would use the ng-if directive 
+
+-	What is the difference between one-way binding and two-way binding?
+
+One way binding is the bind of the data from model to view. 
+Two way binding is the bind the data from model to view and view to model.
+
+-	How would you specify that a scope variable should have one-time binding only?
+-	What is $scope in AngularJS?
+
+The $scope is the binding between the View (HTML) and the Controller (JavaScript). The $scope is the Model.
+The $scope is created with ng-controller.
+
+-	What is $rootScope in AngularJS?
+
+$rootScope refers to an object which is accessible from everywhere inside the application..
+$rootscope is created with ng-app.
+
+-	How would you implement a custom reusable widget that can be used in several places inside and AngularJS application?
+
+
+HTML, CSS and JS Questions (please answer at least 3)
+-	Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?
+-	Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute
+-	How would you approach fixing browser-specific styling issues?
+
+I would use separate stylesheets, that load when a specific browser is being used.
+
+-	How do you organize your code? (module pattern, classical inheritance?)
+-	Can you describe the main difference between a forEach loop and a .map() loop and why you would pick one versus the other?
+
+forEach: it loops through the items in an object/array, with single-step increment.
+map : it applies a transformation on each item in the array and it returns a new array of transformed items with same size of the origial.
+
+-	Make this work:
+         		duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+				
+function duplicate(arrayPar){return arrayPar.concat(arrayPar);}
+
+Testing and performance questions (please answer at least 1)
+-	What tools would you use to test your code's functionality?
+For simple tests, I can use the assert module.
+For browser tests, I would use Selenium.
+
+-	What are some ways you may improve your website's scrolling performance?
+
+General Questions (please answer both questions)
+-	Can you describe the difference between progressive enhancement and graceful degradation?
+
+Graceful degradation: it is the practice of building a web site or application so it provides a good level of user experience in modern browsers, but it will degrade gracefully for older browsers. The users with old browsers can still use the application, even if theyr user experience is not at the best. 
+Progressive enhancement: similar concept to graceful degradation,but in reverse. Is is established a base-level of user experience for most browsers. More advanced functionalities are added for the browsers that can support them.
+
+-	What did you learn this week?
+I learned Angular 5.
